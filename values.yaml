@@ -534,7 +534,8 @@ ingress:
   apiVersion: ""
   ## @param ingress.hostname Default host for the ingress record (evaluated as template)
   ##
-  hostname: keycloak.local
+  ##hostname: keycloak.local
+  hostname: saas-iam.acuverinnovation.com
   ## @param ingress.path Default path for the ingress record
   ##
   path: /
@@ -996,14 +997,25 @@ postgresql:
 ## @param externalDatabase.existingSecret Name of an existing secret resource containing the database credentials
 ## @param externalDatabase.existingSecretPasswordKey Name of an existing secret key containing the database credentials
 ##
+##externalDatabase:
+##  host: ""
+##  port: 5432
+##  user: bn_keycloak
+##  database: bitnami_keycloak
+##  password: ""
+##  existingSecret: ""
+##  existingSecretPasswordKey: ""
+  
 externalDatabase:
-  host: ""
+  host: "cnk-keycloak.chvva0a0uqyw.ap-south-1.rds.amazonaws.com"
   port: 5432
-  user: bn_keycloak
-  database: bitnami_keycloak
-  password: ""
+  user: postgres
+  database: cnk-keycloak
+  password: "BjOctGSrEE5gZesUOSbG"
   existingSecret: ""
   existingSecretPasswordKey: ""
+  
+  
 
 ## @section Keycloak Cache parameters
 
