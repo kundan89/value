@@ -979,12 +979,12 @@ keycloakConfigCli:
 ## @param postgresql.architecture PostgreSQL architecture (`standalone` or `replication`)
 ##
 postgresql:
-  enabled: true
+  enabled: false
   auth:
-    postgresPassword: ""  
-    username: bn_keycloak
+    postgresPassword: "BjOctGSrEE5gZesUOSbG"  
+    username: postgres
     password: ""
-    database: bitnami_keycloak
+    database: cnk-keycloak
     existingSecret: ""
   architecture: standalone
 ## External PostgreSQL configuration
