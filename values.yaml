@@ -456,7 +456,7 @@ sidecars: []
 service:
   ## @param service.type Kubernetes service type
   ##
-  type: LoadBalancer
+  type: ClusterIP
   ## @param service.http.enabled Enable http port on service
   ##
   http:
@@ -1010,7 +1010,7 @@ externalDatabase:
   host: "cnk-keycloak.chvva0a0uqyw.ap-south-1.rds.amazonaws.com"
   port: 5432
   user: postgres
-  database: cnk-keycloak
+  database: saas-iam-keycloak
   password: "BjOctGSrEE5gZesUOSbG"
   existingSecret: ""
   existingSecretPasswordKey: ""
