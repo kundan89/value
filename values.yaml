@@ -102,10 +102,10 @@ image:
 auth:
   ## @param auth.adminUser Keycloak administrator user
   ##
-  adminUser: user
+  adminUser: admin
   ## @param auth.adminPassword Keycloak administrator password for the new user
   ##
-  adminPassword: ""
+  adminPassword: "cnk@iamkeycloak"
   ## @param auth.existingSecret Existing secret containing Keycloak admin password
   ##
   existingSecret: ""
@@ -1007,11 +1007,11 @@ postgresql:
 ##  existingSecretPasswordKey: ""
   
 externalDatabase:
-  host: "cnk-keycloak.chvva0a0uqyw.ap-south-1.rds.amazonaws.com"
+  host: "cnk-saas-keycloak.chvva0a0uqyw.ap-south-1.rds.amazonaws.com"
   port: 5432
   user: postgres
   database: saas-iam-keycloak
-  password: "BjOctGSrEE5gZesUOSbG"
+  password: "rzT4NQuEV29Ur6PI"
   existingSecret: ""
   existingSecretPasswordKey: ""
   
